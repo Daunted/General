@@ -1,0 +1,316 @@
+/*
+Template provided by Tetra #202
+Tetra's CSS Guide: https://www.wolvden.com/chatter/topic/15463
+Free for personal and commercial use.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Josefin+Sans&family=Lato:wght@300&display=swap');
+
+body /*Big Boy. Boss Boy.*/ {
+    
+    background: url('https://i.imgur.com/fIMfGrb.jpg') center fixed !important;
+    background-size: contain;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.alert { /* For when a hunt returns or some such. */
+    background: rgba(94,10,1,.75) !important;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+} .alert a { /* Alert links! */
+    color: #ffdf2b !important;
+} .alert a:hover { /* Hovering :3 */
+    transition: .2s ease;
+    color: #ED760D !important;
+} img.mr-2 { /* Making the icons less bright so they fit with the theme. */
+    filter: grayscale(100%);
+    filter: contrast(20%);
+    filter: brightness(20%);
+}
+
+a /* Links And Stuff. */ {
+    color: #ffdf2b;
+    transition: .2s ease
+}
+
+a:hover /* Links, but mousy */ {
+    color: #ED760D;
+    transition: .2s ease;
+}
+
+.btn-primary, .btn-success {
+    background: #5E0A01;
+    border: 2px solid #3E0000;
+} .btn-primary, .btn-success:hover {
+    background: #3E0000;
+    border: 2px solid black;
+    color: #ffdf2b;
+}
+
+.navbar-main /* Section containing the site navigation. */ {
+    background: #111111 !important;
+    border-bottom: 3px solid black;
+} .navbar-main .nav-link /* Individual navigation links. */ {
+    font-size: 17px !important;
+    transition: .2s ease
+} .navbar-main .nav-link:hover /* Same but mousier. */ {
+    color: #ffdf2b !important;
+    transition: .2s ease;
+} .navbar-main .nav-link .fa /* This seems to select a common prefix for all the header images (globe, paw, etc). */ {
+    color: #D9534F !important;
+    transition: .2s ease
+} .navbar-main .nav-link:hover .fa /* Again, now we are hovering. */ {
+    color: #ffdf2b !important;
+    transition: .2s ease
+} .navbar-status /* Status bar containing your currencies, etc. */ {
+    background: #5E0A01 !important;
+    border-radius: 0px 0px 10px 10px;
+} .navbar-status a {
+  color: white !important;  
+} .navbar-status a:hover { /* Here we're approaching the navbar links, specifically to make them the right color. */
+    color: #ffdf2b !important;
+} .dropdown-menu.show { /* The navbar's dropdown menu, next to your username. */
+    background: #252525;
+} .dropdown-item:hover { /* Color of the dropdown menu item when hovering. */
+    background: black;
+}
+
+.breadcrumb-nav /* Gray breadcrumb bar under the status bar. */ {
+    background: rgba(0,0,0,.5) !important;
+} .breadcrumb-item { /* The non-link text in the breadcrumb bar: slashes and current page. */
+    color : #9e9e9e !important;
+}
+
+#sidebar /* Section containing the sidebar. */ {
+    background: transparent !important;
+} #sidebar .card /* "Card" sections of the sidebar. */ {
+    background: rgba(0,0,0,.5);
+    border: 1px solid #252525;
+} #sidebar .card .w-50 a img { /* The user's wolf on the sidebar. */
+    border-radius: 100px;
+} #sidebar h3, #sidebar h4 /* Card headers. */ {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#main /* Section containing the site's main content. */ {
+    background: transparent !important;
+} h1 /* Title header. */ {
+    text-align: center;
+    color: white;
+    font-family: 'Condiment', cursive;
+    font-size: 70px;
+    text-shadow: 0px 0px 5px white;
+    margin-top: 10px;
+    border-bottom: 3px solid white;
+} .nav-tabs /* Section containing the Den and Profile links. */ {
+    justify-content: center;
+} .nav-tabs .nav-link /* Individual links of the above section. */ {
+    transition: .3s ease;
+} .nav-tabs .nav-link.active /* Link of the page being viewed. */ {
+    background-color: rgba(62,0,0,.75);
+    color: white;
+} div.card { /* For things like the rollover screen, expand territory card, etc. */
+    background: rgba(0,0,0,.5) !important;
+    border: 1px solid #252525 !important;
+}
+
+.table /* Tables containing Pack or User information. */ {
+    background: rgba(0,0,0,0.5) !important;
+} .table th /* Individual table headers. */ {
+    background:  #5E0A01;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+} .table th a { /* Links in the table - specifically the leader name. */
+    color: #ffdf2b !important;
+} .table th a:hover { /* Making the leader name behave like other links when hovered over. */
+    color: #ED760D !important;
+    transition: .2s ease;
+} .subheader /* Subheader row of Cave tables. */ {
+    background: #3E0000 !important; 
+} tr:nth-of-type(odd) {
+    background: rgba(70,19,25,0.5) !important;
+} select.form-control { /* Dropdown boxes. */
+    background: #111111 !important;
+    color: white !important;
+    border: 1px solid black;
+} 
+  .border-none .card /* The lead wolf's card underlay. */ {
+    background: transparent !important;
+} 
+.border-none .card-img-top, .table .form-row img { /* Lead wolf portrait. God. Tables. */
+    border-radius: 20px !important;
+} .featured-wolf img /* Featured wolf portrait. */ {
+    border-radius: 100px;
+}
+
+img.border-bottom /* Headshots for regular ol' wolves */ {
+    border-radius: 10px;
+    border: none !important;
+    border: 2px solid #252525 !important;
+}
+
+img.border-bottom.p-2 /* Where we're going, we don't *need* borders!! (this is for nursing puppies btw) */ {
+    border: none !important;
+}
+
+.col-6 .card.text-center /* Big buttons under the Lead Wolf table. */ {
+    background: #3E0000 !important;
+    border-radius: 10px;
+} div.card.text-center img {
+    border-radius: 10px 10px 0px 0px;
+    filter: saturate(30%) sepia(30%);
+    transition: 0.5s ease;
+} div.card.text-center img:hover {
+    filter: saturate(100%) sepia(0%);
+    transition: 0.5s ease;
+}
+
+.bottom /* Bottom row of the Member Information table. */ {
+    background: #3E0000 !important;
+}
+
+.progress /* Progress bars. */ {
+    background: black !important;
+} .bg-info /* HP bars. These are blue. */ {
+    background: #862805 !important;
+} .bg-danger /* Hunger bars. These are red. */ {
+    background: #C6550B !important;
+} .bg-primary /* Mood bars. These are dark blue. */ {
+    background: #EC9404 !important;
+} .bg-warning /* Energy bars. These are yellow. */ {
+    background: #F3DB27 !important;
+} .bg-success /* EXP bars. These are green. */ {
+    background: white !important;
+}
+
+textarea#txtDenHTML.form-control{ /* The HTML text editor background */
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none !important;
+} button.btn-htmlinput { /* The HTML text editor buttons */
+    background: #3E0000 !important;
+    border: 1px solid black !important;
+    color: white;
+} button.btn-htmlinput:hover {
+    background: black !important;
+    color: #ffdf2b;
+} .bg-bar-input {
+    background: black !important;
+} .form-control.file.search { /* The CSS file thingy thing. */
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none !important;
+} .btn.btn-info { /* The CSS add file button and the preview button. */
+     background: #5E0A01;
+    border: 2px solid #3E0000;
+    color:white;
+} .btn.btn-info:hover {
+    background: #3E0000;
+    border: 2px solid black;
+    color: #ffdf2b;
+}
+
+button.btn.btn-warning { /*Add Immortal and Expand Territory buttons */
+    background: #5E0A01;
+    border: 2px solid #3E0000;
+    color:white;
+} button.btn.btn-warning:hover {
+    background: #3E0000;
+    border: 2px solid black;
+    color: #ffdf2b;
+}
+button#submitBtn.btn.btn-primary { /*The Create Cave button is dumb for some rising*/
+    background: #5E0a01;
+    border: 2px solid #3E0000;
+    color:white;
+}
+button#submitBtn.btn.btn-primary:hover {
+    background: #3E0000;
+    border: 2px solid black;
+    color: #ffdf2b;
+}
+
+#footer /* Copyright content at the page bottom. Don't obscure or mess with it too much. */ {
+    background: #111111 !important;
+    border-radius: 10px 10px 0px 0px;
+} #footer a:hover {
+    color: #ffdf2b;
+} #footer nav .nav-item .nav-link:hover {
+    color: #ffdf2b;
+}
+
+/* the chatbox is bullshit and I can't make heads nor tails of it */
+
+.s-chat-message:nth-child(2n) { /*First, basic message colors*/
+    background: #3E0000 !important;
+} .s-chat-message:nth-child(2n+1) {
+    background: #111111 !important;
+} .s-chat-message_timestamp {
+    color: #464646 !important;
+	font-size: 9px !important;
+} .s-chat-message__mod {
+	background: #5E0A01 !important;
+	color: white !important;
+}
+
+#chatMessagePinned.s-chat-message__pinned { /* Then the pinned message at the top*/
+    background: rgba(94, 10, 1, .75) url(//static.wolvden.com/images/layout/chat/sticky.png) no-repeat 10px 6px !important;
+        background-position-x: 10px;
+        background-position-y: 6px;
+    border-bottom-color: black !important;
+    color: white !important;
+    font-weight: bold;
+} .s-chat-message__pinned a {
+    color: white;
+}
+
+#chatMessageContainer { /*Container at large!*/
+    border: 1px solid #252525 !important;
+    overflow: hidden;
+    position: relative;
+}
+
+::-webkit-scrollbar { /*The scrollbar :3c*/
+	width: 8px;
+	height: 0px;
+	border-radius: 10px;
+	overflow: hidden !important;
+} ::-webkit-scrollbar-track {
+	background: #111111;
+	border-radius: 10px;
+	overflow: hidden !important;
+} ::-webkit-scrollbar-thumb {
+	background: #464646;
+	border-radius: 10px;
+	overflow: hidden !important;
+}
+
+.btn-primary { /*The growl button*/
+    background: #5E0a01;
+    border: 2px solid #3E0000;
+    color:white;
+} .btn-primary:hover {
+    background: #3E0000;
+    border: 2px solid black;
+    color: #ffdf2b;
+}
+
+i.fa.fa-plus.fa-lg, i.fa.fa-lg.fa-minus { /*Chatbox -/+ icon*/
+    color: white !important;
+} fa.fa-cog.fa-lg { /*And the settings gear*/
+    color: white !important;
+}
+
+#label_currentChannel { /*Dropdown box at the top*/
+    background: #111111 !important;
+    color: white !important;
+    border: 1px solid black;
+}
+
+#txtChatInput { /*The chat input box.*/
+    background: rgba(0,0,0,0.5) !important;
+    color: white !important;
+    border: none !important;
+}
